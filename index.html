@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- the above line link the style sheet with html code -->
+     
+</head>
+<body>
+    <!-- <h1 id="Chikun">This is my first time using css</h1>
+    <h1 id="Amlan">This is my first time learning css via youtube</h1>
+
+     we can use it inline(in the same tag in which i wanna change the color), or we can use <style>---</style> tag too -->
+
+    <!-- for applying css, the most widely used format is making another external stylesheet only for writing css -->
+
+    <!-- <p><b> This is a simple/ normal paragraph </b></p>
+    <button>Click Me !</button>
+    <style>
+        button{
+            background-color: red
+        }
+    </style>
+    <br>
+    <hr>
+    <table>
+    <tr>
+    <td>        
+    <div class="circle"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpSMPwmoxm99s9y_IDaG_ONxoCxVFLEnxbsvn1KD2pklR2sqa8SM6MSh4&s=10"> </div>
+    </td>
+    <td><pre>       </pre></td>
+    <td>
+        <h1>
+            <b>
+                <i><u>
+                    Something About Rose^ (BLACKPINK):-
+                </u></i>
+            </b>
+        </h1> 
+        <p>
+            <i>
+                Rose, known as Park Chaeyoung is a member of world's most famous girl group BLACKPINK. her home country is Australia. She is the main vocalist of BLACKPINK and her song always owns everyone's heart at first listening, she is also known as tghe golden voice of kpop. her hit songs like APT, ON THE GROUND, GONE, MESSY, NUMBER ONE GIRL, TOXIC TILL THE END heald everyone's heart and her first album ROSIE is the great album she relesed. And APT is the first ever song of ROSE^ which goes 2.5 billion views in both <img class="Maheswar" src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Full_Logo_RGB_Green.png"> and <img class="Maheswar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7B8IYvwl0lSvCMgLdeXIR-irI3mbjCb6LEI61gmZ5Jg&s=10"> in this song she also do a collabaration with Bruno Mars, and other hits like TOXIC TILL THE END & NUMBER ONE GIRL is also hit the billboard charts.
+            </i>
+        </p>
+    </td>  
+    </tr>
+    </table>
+    <h1 id="Jaydev">This is my expiremential heading</h1>
+
+    <div id="box1">
+        box1
+        <div id="box2">box2</div>
+    </div> --> 
+
+    
+```
+<!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Ayushman<span>.</span></h2>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+
+        <button class="cart-button" onclick="toggleCart()">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tagline">WELCOME TO NOVA STORE</p>
+
+        <h1>Shopping made<br>simple and stylish.</h1>
+
+        <p>
+            Discover quality products at prices
+            you'll love.
+        </p>
+
+        <a href="#products" class="shop-button">
+            Shop Now →
+        </a>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section class="products-section" id="products">
+    <div class="section-heading">
+        <p>OUR COLLECTION</p>
+        <h2>Featured Products</h2>
+    </div>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600"
+                alt="Classic wristwatch"
+            >
+
+            <div class="product-info">
+                <h3>Classic Watch</h3>
+                <p class="price">₹1,499</p>
+
+                <button onclick="addToCart(0)">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600"
+                alt="Red sports shoe"
+            >
+
+            <div class="product-info">
+                <h3>Sport Sneakers</h3>
+                <p class="price">₹2,299</p>
+
+                <button onclick="addToCart(1)">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img
+                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600"
+                alt="Wireless headphones"
+            >
+
+            <div class="product-info">
+                <h3>Wireless Headphones</h3>
+                <p class="price">₹1,999</p>
+
+                <button onclick="addToCart(2)">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img
+                src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600"
+                alt="Vintage camera"
+            >
+
+            <div class="product-info">
+                <h3>Vintage Camera</h3>
+                <p class="price">₹3,499</p>
+
+                <button onclick="addToCart(3)">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Shopping Cart -->
+<section class="cart-section" id="cart">
+    <h2>Your Shopping Cart</h2>
+
+    <div id="cart-items">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <h3>Total: ₹<span id="cart-total">0</span></h3>
+
+    <button class="checkout-button" onclick="checkout()">
+        Proceed to Checkout
+    </button>
+</section>
+
+<!-- About Section -->
+<section class="about-section" id="about">
+    <h2>Why Choose Ayushman?</h2>
+
+    <p>
+        We believe shopping should be simple,
+        affordable, and enjoyable.
+        Discover products selected for your everyday life.
+    </p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <h2>Ayushman.</h2>
+    <p>© 2026 Ayushman Store. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+```
+
+</body>
+</html>
+
